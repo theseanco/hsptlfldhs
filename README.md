@@ -4,7 +4,7 @@
 
 ### About
 
-This repo contains the code and samples used to create the EP [HSPTLFLDHS](https://co34pt.bandcamp.com/album/hsptlfldhs). It was recorded at Hospitalfield House ('[regarded as one of the finest country houses in Scotland](https://archive.is/z3t9t)'), during a Creative Practice symposium. It is a combination of an internal SuperCollider recording and a room recording taken with a *INSERT MIC NAME*
+This repo contains the code and samples used to create the EP [HSPTLFLDHS](https://co34pt.bandcamp.com/album/hsptlfldhs). It was recorded at Hospitalfield House ('[regarded as one of the finest country houses in Scotland](https://archive.is/z3t9t)'), during a Creative Practice symposium. It is a combination of an internal SuperCollider recording and a room recording taken with a DPA d:mension 5100 Microphone.
 
 HSPTLFLDHS was created over the course of an afternoon as an experiment in using [L-Systems](https://en.wikipedia.org/wiki/L-system) as a way to create interesting, more spacious rhythms. It uses the [Prewrite](http://doc.sccode.org/Classes/Prewrite.html) class, which uses a L-system grammar within SuperCollider's Pattern class.
 
