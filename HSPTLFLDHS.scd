@@ -34,14 +34,15 @@ d[\offtom3] = Pseq([0],1);
 //Multipliers for durations - A multiplier of 2 will double the duration, 0.5 will half the duration, etc.
 //These will sound when they are evaluated and can be changed on the fly
 //Once the multipliers have been changed it will be very difficult to make individual sampes sound in unison
+//The EP starts with all of these in unison and gradually diverges
 //NOTE: Very low multipliers or a zero multiplier will crash the server. Exercise caution.
 ~multk = {1};
 ~multh = {1};
 ~multsn = {1};
 
 ~multstab = {1};
-~multstab2 = {2};
-~multstab3 = {4};
+~multstab2 = {1};
+~multstab3 = {1};
 
 ~multtom = {1};
 ~multtom2 = {1};
@@ -74,6 +75,15 @@ d[\offtom3] = Pseq([0],1);
 ~tom3 = Pbind(\instrument,\bplaym,\buf,d["t"][0],\dur,Pseq([d[\offtom3],(l * Pkr(~multtom3))],inf),\amp,0.7,\rate,Pkr(~tom3rate),\rel,0.1,\pan,Pwhite(-0.8,0.8).stutter(Pwhite(40,100).asStream));
 )
 
-~k.play
-~stab.play
-~stab3.play
+//play these to bring in the various samples
+~k.play;
+~sn.play;
+~h.play;
+
+~stab.play;
+~stab2.play;
+~stab3.play;
+
+~tom.play;
+~tom2.play;
+~tom3.play;
